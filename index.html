@@ -88,6 +88,33 @@
             padding: 20px 0;
             margin-top: 20px;
         }
+
+        /* WhatsApp Button */
+        .whatsapp-btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #25D366, #1ebe5d);
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .whatsapp-btn:hover {
+            background: linear-gradient(135deg, #1ebe5d, #25D366);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -183,15 +210,17 @@
     </section>
 
     <section id="kontak">
-        <h2>Kontak Kami</h2>
-        <p>Ingin memasang kaca film atau membutuhkan konsultasi? Hubungi kami segera:</p>
-        <p><strong>Telepon:</strong> <a href="https://wa.me/6285231814619">+62 852-3181-4619</a></p>
+        <h2>Hubungi Kami</h2>
+        <p>Untuk informasi lebih lanjut atau konsultasi, hubungi kami melalui WhatsApp.</p>
+        <div class="whatsapp-btn-container">
+            <a href="https://wa.me/6285231814619" target="_blank" class="whatsapp-btn">Hubungi Kami di WhatsApp</a>
+        </div>
         <p><strong>Alamat:</strong> Blitar, Jawa Timur</p>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 Ahli Kaca Film Blitar.</p>
+    <p>&copy; 2024 - Ahli Kaca Film Blitar.</p>
 </footer>
 
 </body>
